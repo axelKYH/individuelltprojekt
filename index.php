@@ -25,20 +25,30 @@
 
 
     <?php
-      switch($_GET['page']) {
+    $db = mysqli_connect('localhost', 'root', '', 'indproject');
+
+    $query = "SELECT * FROM content";
+
+    $result = mysqli_query($db, $query);
+
+
+    $page = 'home';
+    if (isset($_GET['page'])) {
+        $page = $_GET['page'];
+      }
+      switch($page) {
         case 'cv':
         include('cv.php');
         break;
-        case 'home':
+        case 'portfolio':
+        include('portfolio.php');
+        break;
+        default:
         echo "<article id='index_info'>
             <p>
               Hej, jag heter Axel och är front end-utvecklare.
             </p>
         </article>";
-        break;
-        case 'portfolio':
-        include('portfolio.php');
-        break;
       }
     ?>
 

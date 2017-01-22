@@ -1,3 +1,17 @@
+<?php
+$db = mysqli_connect('localhost', 'root', '', 'indproject');
+
+$query = "SELECT * FROM content";
+
+$result = mysqli_query($db, $query);
+
+while($row = mysqli_fetch_assoc($result)){
+  $su = "{$row['su']}";
+  $rml = "{$row['rml']}";
+  $work = "{$row['work']}";
+}
+
+ ?>
 <html>
 <head>
     <title>Axel Aronsson - Front End Developer</title>
@@ -15,37 +29,25 @@
     <div class="cv_div">
         <div id="rubrik">Stockholms universitet<span class="lasmer">Läs mer&nbsp;&nbsp;&darr;&nbsp;&nbsp;</span></div>
         <div id="textdiv">
-        I had a job in the great north woods
-        Working as a cook for a spell
-        But I never did like it all that much
-        And one day the ax just fell
-        So I drifted down to New Orleans
-        Where I happened to be employed
-        Workin’ for a while on a fishin’ boat
+          <?php
+            echo "$su";
+          ?>
       </div>
     </div>
     <div class="cv_div">
         <div id="rubrik">Birkagårdens folkhögskola<span class="lasmer">Läs mer&nbsp;&nbsp;&darr;&nbsp;&nbsp;</span></div>
         <div id="textdiv">
-          I had a job in the great north woods
-          Working as a cook for a spell
-          But I never did like it all that much
-          And one day the ax just fell
-          So I drifted down to New Orleans
-          Where I happened to be employed
-          Workin’ for a while on a fishin’ boat
+          <?php
+            echo "$rml";
+          ?>
         </div>
     </div>
     <div class="cv_div">
         <div id="rubrik">Jobb<span class="lasmer">Läs mer&nbsp;&nbsp;&darr;&nbsp;&nbsp;</span></div>
         <div id="textdiv">
-          I had a job in the great north woods
-          Working as a cook for a spell
-          But I never did like it all that much
-          And one day the ax just fell
-          So I drifted down to New Orleans
-          Where I happened to be employed
-          Workin’ for a while on a fishin’ boat
+          <?php
+            echo "$work";
+          ?>
         </div>
     </div>
 
