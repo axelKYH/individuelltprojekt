@@ -1,6 +1,6 @@
 <?php
 $db = mysqli_connect('localhost', 'root', '', 'indproject');
-
+mysqli_query($db, 'SET NAMES utf8');
 $query = "SELECT * FROM content";
 
 $result = mysqli_query($db, $query);
