@@ -1,14 +1,25 @@
 <?php
 $db = mysqli_connect('localhost', 'root', '', 'indproject');
 mysqli_query($db, 'SET NAMES utf8');
-$query = "SELECT * FROM content";
+$query = "SELECT * FROM content
+          WHERE id = 1";
 
 $result = mysqli_query($db, $query);
 
 while($row = mysqli_fetch_assoc($result)){
-  $su = "{$row['su']}";
-  $rml = "{$row['rml']}";
-  $work = "{$row['work']}";
+  $textOne = "{$row['textOne']}";
+  $textTwo = "{$row['textTwo']}";
+  $textThree = "{$row['textThree']}";
+}
+$query2 = "SELECT * FROM content
+          WHERE id = 2";
+
+$result2 = mysqli_query($db, $query2);
+
+while($row = mysqli_fetch_assoc($result2)){
+  $headerOne = "{$row['textOne']}";
+  $headerTwo = "{$row['textTwo']}";
+  $headerThree = "{$row['textThree']}";
 }
 
  ?>
@@ -27,26 +38,26 @@ while($row = mysqli_fetch_assoc($result)){
 <body>
 
     <div class="cv_div">
-        <div id="rubrik">Stockholms universitet<span class="lasmer">Läs mer&nbsp;&nbsp;&darr;&nbsp;&nbsp;</span></div>
+        <div id="rubrik"><?php echo "$headerOne" ?><span class="lasmer">Läs mer&nbsp;&nbsp;&darr;&nbsp;&nbsp;</span></div>
         <div id="textdiv">
           <?php
-            echo "$su";
+            echo "$textOne";
           ?>
       </div>
     </div>
     <div class="cv_div">
-        <div id="rubrik">Birkagårdens folkhögskola<span class="lasmer">Läs mer&nbsp;&nbsp;&darr;&nbsp;&nbsp;</span></div>
+        <div id="rubrik"><?php echo "$headerTwo" ?><span class="lasmer">Läs mer&nbsp;&nbsp;&darr;&nbsp;&nbsp;</span></div>
         <div id="textdiv">
           <?php
-            echo "$rml";
+            echo "$textTwo";
           ?>
         </div>
     </div>
     <div class="cv_div">
-        <div id="rubrik">Jobb<span class="lasmer">Läs mer&nbsp;&nbsp;&darr;&nbsp;&nbsp;</span></div>
+        <div id="rubrik"><?php echo "$headerThree" ?><span class="lasmer">Läs mer&nbsp;&nbsp;&darr;&nbsp;&nbsp;</span></div>
         <div id="textdiv">
           <?php
-            echo "$work";
+            echo "$textThree";
           ?>
         </div>
     </div>
