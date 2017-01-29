@@ -1,0 +1,139 @@
+body {
+  margin: 2em;
+}
+
+h2 {
+  font-family: Arial;
+  text-align: center;
+}
+h5 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+nav {
+  text-align: center;
+  padding-bottom: 10%;
+}
+.meny {
+  padding: 4%;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial;
+  border: 2px solid black;
+  display: inline;
+}
+
+#index_info p {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#clockdiv{
+	font-family: sans-serif;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 15px;
+	width: 100%;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 10px;
+	border-radius: 3px;
+
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 10px;
+}
+
+footer {
+  margin-top: 8em;
+  width: 100%;
+  height: 15%;
+  border-top: 2px solid black;
+}
+
+#clockdiv2{
+	font-family: sans-serif;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 15px;
+	width: 100%;
+}
+
+#clockdiv2 > div{
+	padding: 10px;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+#clockdiv2 div > span{
+	padding: 10px;
+	border-radius: 3px;
+
+	display: inline-block;
+}
+
+footer {
+  margin-top: 8em;
+  width: 100%;
+  height: 15%;
+  border-top: 2px solid black;
+}
+
+.cv_div {
+    padding-top:3em;
+    width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    font-size:12px;
+ }
+
+
+.merinfo {
+    text-overflow: inherit;
+}
+
+ #textdiv {
+    height: auto;
+    width: 100%;
+    display: none;
+ }
+
+ #rubrik {
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+ }
+
+ .lasmer {
+    float: right;
+    cursor: pointer;
+ }
+
+  .socialmedia{
+ 	float:right;
+ 	padding-right:1em;
+ 	color: turquoise;
+ }
+
+  h4{
+  padding-bottom:1em;
+  font-family:sans-serif;
+}
+ #case{
+  text-align:center;
+  font-family:sans-serif;
+ }

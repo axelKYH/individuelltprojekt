@@ -34,9 +34,12 @@ function initializeClock(id, endtime) {
         var t = getTimeRemaining(endtime);
 
         daysSpan.innerHTML = t.days;
-        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+        $(".hours").html('0' + t.hours).slice(-2);
+        //hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+        $(".minutes").html('0' + t.minutes).slice(-2);
+        //minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        $(".seconds").html('0' + t.seconds).slice(-2);
+        //secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
         if (t.total <= 0) {
             clearInterval(timeinterval);

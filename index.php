@@ -9,6 +9,9 @@
     <link rel="stylesheet" media="(min-width:501px) and (max-width:780px)" href="tablet.css">
     <link rel="stylesheet" media="(min-width:781px)" href="desktop.css">
     <script async src="https://use.fontawesome.com/986342ab7c.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.js"
+            integrity="sha256-5i/mQ300M779N2OVDrl16lbohwXNUdzL/R2aVUXyXWA="
+            crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -94,11 +97,10 @@
       }
     ?>
 
-
     <footer>
         <div id="footer_info">
           mail: axel.aronsson@student.kyh.se <br>
-          telefon: 0730-23 03 88
+          <a href='contact.php'>Kontakt</a>
           <a href='admin.php'>Admin</a>
           <a class="socialmedia" href="https://www.facebook.com/sharer/sharer.php?u=www.axelaronsson.se"><i class="fa fa-facebook" aria-hidden="true"></i></a>
           <a class="socialmedia" href="https://www.linkedin.com/shareArticle?mini=true&url=www.axelaronsson.se&title=Axel%20Aronsson%20Front%20end-utvecklare&summary=&source="><i class="fa fa-linkedin" aria-hidden="true"></i></a>
