@@ -48,58 +48,58 @@
             <p>
               Hej, jag heter Axel och är front end-utvecklare.
             </p>
-        </article>";
+        </article>
+        <section id='countdown_graduation'>
+            <div id='clockdiv'>
+                <p>Tid kvar till examen:</p>
+                <div>
+                    <span class='days'></span>
+                    <div class='smalltext'>Dagar</div>
+                </div>
+                <div>
+                    <span class='hours'></span>
+                    <div class='smalltext'>Timmar</div>
+                </div>
+                <div style='display:none'>
+                    <span class='minutes'></span>
+                    <div class='smalltext'>Minutes</div>
+                </div>
+                <div style='display:none'>
+                    <span class='seconds'></span>
+                    <div class='smalltext'>Seconds</div>
+                </div>
+            </div>
+        </section>
+        <section id='countdown_LIA'>
+            <div id='clockdiv2' class='clock2'>
+                <p>Tid kvar till LIA:</p>
+                <div class='clock2'>
+                    <span class='days'></span>
+                    <div class='smalltext'>Dagar</div>
+                </div>
+                <div class='clock2'>
+                    <span class='hours'></span>
+                    <div class='smalltext'>Timmar</div>
+                </div>
+                <div class='clock2' style='display:none'>
+                    <span class='minutes'></span>
+                    <div class='smalltext'>Minutes</div>
+                </div>
+                <div class='clock2' style='display:none'>
+                    <span class='seconds'></span>
+                    <div class='smalltext'>Seconds</div>
+                </div>
+            </div>
+        </section>";
       }
     ?>
-
-    <!--<section id="countdown_graduation">
-        <div id="clockdiv">
-            <p>Tid kvar till examen:</p>
-            <div>
-                <span class="days"></span>
-                <div class="smalltext">Dagar</div>
-            </div>
-            <div>
-                <span class="hours"></span>
-                <div class="smalltext">Timmar</div>
-            </div>
-            <div style="display:none">
-                <span class="minutes"></span>
-                <div class="smalltext">Minutes</div>
-            </div>
-            <div style="display:none">
-                <span class="seconds"></span>
-                <div class="smalltext">Seconds</div>
-            </div>
-        </div>
-    </section>
-    <section id="countdown_LIA">
-        <div id="clockdiv2" class="clock2">
-            <p>Tid kvar till LIA:</p>
-            <div class="clock2">
-                <span class="days"></span>
-                <div class="smalltext">Dagar</div>
-            </div>
-            <div class="clock2">
-                <span class="hours"></span>
-                <div class="smalltext">Timmar</div>
-            </div>
-            <div class="clock2" style="display:none">
-                <span class="minutes"></span>
-                <div class="smalltext">Minutes</div>
-            </div>
-            <div class="clock2" style="display:none">
-                <span class="seconds"></span>
-                <div class="smalltext">Seconds</div>
-            </div>
-        </div>
-    </section>-->
 
 
     <footer>
         <div id="footer_info">
           mail: axel.aronsson@student.kyh.se <br>
           telefon: 0730-23 03 88
+          <a href='admin.php'>Admin</a>
           <a class="socialmedia" href="https://www.facebook.com/sharer/sharer.php?u=www.axelaronsson.se"><i class="fa fa-facebook" aria-hidden="true"></i></a>
           <a class="socialmedia" href="https://www.linkedin.com/shareArticle?mini=true&url=www.axelaronsson.se&title=Axel%20Aronsson%20Front%20end-utvecklare&summary=&source="><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </div>
