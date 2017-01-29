@@ -2,7 +2,7 @@
 
 <?php
   if( isset($_POST['password']) ){
-    if($_POST['password'] == "hemlis"){
+    if($_POST['password'] == "KYHsthlm"){
       $_SESSION['admin'] = TRUE;
     }
   }
