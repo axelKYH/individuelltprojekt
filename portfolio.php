@@ -28,7 +28,7 @@
               Projekt som jag jobbar med just nu
           </p>
           <a href='https://github.com/krokben/_agileboardgame'>KYH teamprojekt</a>
-          <a href='https://github.com/krokben/_agileboardgame'>KYH individuellt projekt</a>
+          <a href='https://github.com/axelKYH/individuelltprojekt'>KYH individuellt projekt</a>
         </div>
     </article>
 

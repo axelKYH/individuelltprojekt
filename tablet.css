@@ -113,9 +113,8 @@ footer {
 
  #rubrik {
      width: 300px;
-     height: 50px;
+     min-height: 50px;
      cursor: pointer;
-     font-weight: bold;
  }
 
  .lasmer {
@@ -138,3 +137,7 @@ footer {
   margin-bottom:25em;
   font-family:sans-serif;
  }
+ iframe{
+ margin-top:10%;
+ margin-left:30%;
+}

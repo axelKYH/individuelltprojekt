@@ -12,7 +12,7 @@
   }
 
   if(isset($_SESSION['admin']) && $_SESSION['admin'] == TRUE){
-    $db = mysqli_connect('localhost', 'root', '', 'indproject');
+    $db = mysqli_connect('indproject-219319.mysql.binero.se', '219319_te56871', 'hejschweiz200', '219319-indproject');
     mysqli_query($db, 'SET NAMES utf8');
 
     echo "<form method='post' action=''>
@@ -41,6 +41,14 @@
       mysqli_query($db, $query);
 
     }
+    if(isset($_POST['indexSubmit'])){
+      $indexHeader = mysqli_real_escape_string($db, $_POST['indexHeader']);
+      $query = "UPDATE content SET textOne='$indexHeader'
+                WHERE id=3";
+
+      mysqli_query($db, $query);
+
+    }
 
      $query = "SELECT * FROM content
                WHERE id = 1";
@@ -62,6 +70,14 @@
        $headerTwo = "{$row['textTwo']}";
        $headerThree = "{$row['textThree']}";
      }
+     $query = "SELECT * FROM content
+               WHERE id = 3";
+
+     $result = mysqli_query($db, $query);
+
+     while($row = mysqli_fetch_assoc($result)){
+       $indexHeader = "{$row['textOne']}";
+     }
 
      echo "<html>
      <head>
@@ -75,10 +91,16 @@
          <input type='submit' name='textSubmit' value='skicka' />
        </form>
        <form method='post' action=''>
+         <label>Rubrik</label>
          <textarea name='headerOne'>$headerOne</textarea>
          <textarea name='headerTwo'>$headerTwo</textarea>
          <textarea name='headerThree'>$headerThree</textarea>
          <input type='submit' name='headerSubmit' value='skicka' />
+       </form>
+       <form method='post' action=''>
+         <label>Välkomstsida</label>
+         <textarea name='indexHeader'>$indexHeader</textarea>
+         <input type='submit' name='indexSubmit' value='skicka' />
        </form>
 
      </body>

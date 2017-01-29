@@ -1,5 +1,5 @@
 <?php
-$db = mysqli_connect('localhost', 'root', '', 'indproject');
+$db = mysqli_connect('indproject-219319.mysql.binero.se', '219319_te56871', 'hejschweiz200', '219319-indproject');
 mysqli_query($db, 'SET NAMES utf8');
 $query = "SELECT * FROM content
           WHERE id = 1";
@@ -72,6 +72,7 @@ while($row = mysqli_fetch_assoc($result2)){
         </div>
     </div>
 
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/MhkGQAoc7bc?list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b" frameborder="0" allowfullscreen></iframe>
 
 </body>
 </html>

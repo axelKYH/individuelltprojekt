@@ -1,3 +1,15 @@
+<?php
+$db = mysqli_connect('indproject-219319.mysql.binero.se', '219319_te56871', 'hejschweiz200', '219319-indproject');
+mysqli_query($db, 'SET NAMES utf8');
+$query = "SELECT * FROM content
+          WHERE id = 3";
+
+$result = mysqli_query($db, $query);
+
+while($row = mysqli_fetch_assoc($result)){
+  $indexHeader = "{$row['textOne']}";
+}
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +28,7 @@
 <body>
     <header>
         <h2>Axel Aronsson</h2>
-        <h5>Front end utvecklare</h5>
+        <h5>Front end-utvecklare</h5>
     </header>
 
 
@@ -28,12 +40,6 @@
 
 
     <?php
-    $db = mysqli_connect('localhost', 'root', '', 'indproject');
-
-    $query = "SELECT * FROM content";
-
-    $result = mysqli_query($db, $query);
-
 
     $page = 'home';
     if (isset($_GET['page'])) {
@@ -49,7 +55,7 @@
         default:
         echo "<article id='index_info'>
             <p>
-              Hej, jag heter Axel och är front end-utvecklare.
+              $indexHeader
             </p>
         </article>
         <section id='countdown_graduation'>

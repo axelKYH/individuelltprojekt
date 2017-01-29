@@ -13,7 +13,7 @@
 </form>
 
 <?php
-    $db = mysqli_connect('localhost', 'root', '', 'indproject');
+    $db = mysqli_connect('indproject-219319.mysql.binero.se', '219319_te56871', 'hejschweiz200', '219319-indproject');
     mysqli_query($db, 'SET NAMES utf8');
 
     if( isset($_POST['message']) && isset($_POST['email'])){
